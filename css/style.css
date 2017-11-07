@@ -1,0 +1,270 @@
+body {
+  color: #666;
+  font-family: "Open Sans",sans-serif;
+}
+nav {
+  background: rgba(44,78,107,0.8);
+}
+
+/*.navbar {
+  text-align: center;
+}*/
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  margin: 0;
+  /*text-align: center;*/
+}
+nav a {
+  /*display: inline-block;*/
+  color: white;
+  text-transform: uppercase;
+  color: #fff;
+  /*font-weight: lighter;*/
+  line-height: 40px;
+  text-decoration: none;
+}
+
+/*.wrapper {
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+ }*/
+
+/*#header a:hover {
+  text-decoration: none;
+
+  box-sizing: border-box;
+}*/
+
+#header #logo-img {
+  margin: auto;
+}
+
+/*#header #social-media {
+  margin: 25px;
+}*/
+
+#header #social-media a {
+  margin-left: 15px;
+}
+
+#social-media {
+  float: right;
+}
+
+/*#header #social-media {
+    float: right;
+    display: inline-block;
+}*/
+
+.nav-link {
+  margin: 0;
+  padding: 1rem;
+  /*padding-top: 0;
+  padding-bottom: 0;*/
+}
+#navbar-collapsable .nav-link:hover {
+  background-color: rgba(44, 78, 107, 0.8);
+    font-size: larger;
+    color: white;
+}
+
+#social-media img:hover {
+  width: .8em;
+  height: auto;
+
+}
+
+#social-media.nav-link  {
+  padding: .5rem 0;
+
+}
+/*#header .container {
+  padding: 0 20px;
+  width: 100%;
+}*/
+
+/*#navbar-collapsable .nav-link: {
+  background-color: #AEC33C;
+}*/
+.navbar-toggler {
+  margin-right: -10px;
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#AEC33C' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+}
+
+#content-container {
+  background: url(/images/header.jpg) no-repeat center center;
+  background-size: cover;
+  clear: both;
+    float: left;
+    margin: 0;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#content-container .container {
+  box-sizing: border-box;
+padding: 0 20px;
+width: 100%;
+}
+
+#content-container h1 {
+    text-align: center;
+    margin-top: 275px;
+    text-shadow: 1px 1px 6px #000;
+}
+
+h1 {
+    font-size: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+    font-family: "jenniferregular",sans-serif;
+    font-weight: normal;
+    line-height: 1.325em;
+    margin: 0 0 30px;
+}
+#content-container p {
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    font-size: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 4px #000;
+}
+@media (max-width: 341px) {
+  #header #logo-img {
+    margin-left: 0;
+  }
+
+  #header #social-media {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+
+}
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+  .container {
+    /*padding: 0 40px;*/
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  #social-media {
+    position: absolute;
+    top: 13px;
+    right: 70px;
+    float: right;
+    vertical-align: middle;
+}
+
+/*#header .navbar-toggler {
+  margin-right: -10px;
+  }*/
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  /*#header .container .navbar {
+    padding: 0 40px;
+    width: 100%;
+  }*/
+
+  .navbar {
+    font-size: 16px;
+  }
+
+  #navbar-collapsable {
+    /*display: block;*/
+    margin: 0 0 0 20px;
+    padding: auto;
+  }
+  /*#navbar-container  {
+    height: 100%;
+  }*/
+  #header nav  {
+    padding: 0 40px;
+  }
+
+
+}
+
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {
+  #navbar-collapsable a {
+    display: block;
+    float: left;
+    font-weight: light;
+    font-size: 16px;
+    padding: 15px 25px;
+  }
+#header  .navbar .container {
+    width: 991px;
+    padding: 0 50px;
+  }
+}
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+  #header .container .navbar {
+    padding: 0 76px;
+  }
+}
+
+
+/*#head-image {
+  background: url("/images/cilantro_flowers.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+#header {
+  text-align: center;
+}*/
+/*#brand {
+  display: block;
+  float: left;
+  text-align: left;
+}*/
+/*#social-media {
+  float: right;
+  display: block;
+  text-align: left;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-left: 1rem;
+}*/
+
+/*.custom-toggler.navbar-toggler-icon {
+    border-color: rgb(255,102,203);
+}*/
+/*.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}*/
+
+/*.navbar {
+  padding: 1rem 5rem;
+}*/
